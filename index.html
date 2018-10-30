@@ -6,42 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-fixed-top" id="main-navigation" style="opacity: .75;">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <!-- <li><a href="contact.html">Get in Touch</a></li> -->
-                </ul>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="main-navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item px-2">
+                    <a class="nav-link active" href="index.html">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+    <div class="container-fluid">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-md-4 text-center mt-3">
+                    <img src="images/graduation.jpg" width="250" class="rounded img-fluid" />
+                    <h2 class="pt-2">Megan Cole</h2>
+                    <div class="pb-2">
+                        <i class="fa fa-envelope"></i> mlcole1114@gmail.com
+                    </div>
+                    <span id="social">
+                        <a href="https://www.linkedin.com/in/megan-cole-726aab80/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                        <a href="https://github.com/givingforwardmegan" target="_blank" class="pl-2"><i class="fa fa-github fa-2x"></i></a>
+                    </span>
+                </div>
+                <div class="col-md-7 mt-3">
+                    <p>
+                        I graduated from an online college in 2016 with my Bachelor's degree in Informatics (their version of
+                        computer science).
+                        I found my love for coding back when MySpace was a thing. Trust me, nothing makes me feel more like a
+                        millennial than that statement!
+                        While college gave me a minimal amount of experience, the majority of my skills were developed at my
+                        previous job as a junior developer.
+                        <br /><br />
+                        I never considered myself a data geek until I dove into <strong>SQL</strong>. 
+                        Down the road I worked on a site in <strong>AngularJS</strong>,
+                        got to debug sites in <strong>C#</strong> and <strong>VB</strong>, and helped develop a site in <strong>Vue.js</strong>,
+                        <strong>JavaScript</strong> and <strong>Bootstrap</strong>!
+                        I also learned how to use <strong>Git</strong> for version control, the command line, write stored
+                        procedures, and gain an understanding of NPM and webpack.
+                        <br /><br />
+                    </p>
+                    <h3>I also teach classes!</h3>
+                      <p class="gdi">
+                        A few awesome women and I started a Fort Worth chapter of <a href="http://www.girldevelopit.com" target="_blank">Girl Develop It</a>
+                        in February. We schedule classes and events through <a href="https://www.meetup.com/Girl-Develop-It-DFW/" target="_blank">Meetup</a>
+                        to help individuals who want to transition into web development. 
+                      </p>  
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="container text-center">
-        <img id="profile-photo" src="images/me.jpg" />
-        <h2>Megan Cole</h2>
-        <h5>Front end developer, dork and pizza enthusiast</h5>
-        <span>
-            <i class="fa fa-envelope fa-md" aria-hidden="true" style="padding: 5px;"></i> mlcole1114@gmail.com
-        </span>
-    </div>
-    <div class="row" id="social">
-        <a href="https://www.linkedin.com/in/megan-cole-726aab80/" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
-        <a href="https://github.com/givingforwardmegan" style="padding-left: 10px;" target="_blank"><i class="fa fa-github fa-3x"></i></a>
     </div>
 </body>
 
